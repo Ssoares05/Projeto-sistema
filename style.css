@@ -1,15 +1,86 @@
+*{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
 body {
-  background-color:linen
+  padding:10px;
+  margin:10px;
+  background-color:linen;
+  
 }
 
 
 h1 {
-  color:darkslategrey
+  padding:10px;
+  margin:10px;
+font-weight:bold;
+ color:brown;
+ width:auto;
+ height: 25px;
+ position:relative;
+ left: 450px;
+ text-align:left;
 }
 
-table {
-  color:darkslategrey
-}
+.tabela {
+  padding:10px;
+  margin:10px;
+  color:brown;
+  background-color:floralwhite;
+  border-collapse:separate;
+  border:darkslategrey solid 4px;
+  border-radius: 5px;
+  width:100px;
+  height:65px;
+  position:relative;
+  }
 
+div button {
+    color:brown;
+    background-color:floralwhite;
+    font-weight:bold;
+    width: 150px;
+    height: 20px;
+    position:relative;
+    left: 495px;
+    top: 2%;
+    
+}
+ 
+  footer {
+    padding:10px;
+  margin:10px;
+    font-weight:bold;
+  color:black;
+  }
+
+  select {
+    color:brown;
+    background-color:floralwhite;
+    width: auto;
+    height: 20px;
+    font-weight:bold;
+ }
+
+ .filiais {
+  color:brown;
+  background-color:floralwhite;
+  border:black solid 3px;
+  border-radius: 5px;
+  font-weight:bold;
+  width:fit-content; 
+  height: 15px;
+  position:relative;
+  left: 435px;
+ }
+
+ .vazia {
+  width: 1000px;
+  height: 350px;
+  background-color:floralwhite;
+  position:relative;
+  left: 85px;
+ }
 
 

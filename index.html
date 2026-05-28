@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="sistema de avaria">
-    <title>Sistema de Avaria</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body> 
-    <main>
-      <section id="Sistema de avaria">
-    <h1>Sistema de Avaria</h1> <br>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="sistema de avaria">
+  <title>Sistema de Avaria</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <main>
+    <section id="Sistema de avaria">
+      <h1>Sistema de Avaria</h1> <br>
     </section>
-      <section> 
-         <form><!--FORMULARIO COM AS FILIAIS-->
-           <table border="3">
-             <th>
-               <label for="AFILIAL">AFILIAL</label>
-               <select name="AFILIAL" id="AFILIAL">  
+    <section>
+      <form><!--FORMULARIO COM AS FILIAIS-->
+        <table border="3" class="filiais">
+          <th>
+            <label for="AFILIAL">AFILIAL</label>
+            <select name="AFILIAL" id="AFILIAL">
               <option value="option1">MATRIZ</option>
               <option value="option2">FILIAL DE RIO GRANDE DO SUL</option>
               <option value="option3">FILIAL DE PARANA</option>
@@ -24,54 +27,81 @@
               <option value="option5">FILIAL DE MINAS GERAIS</option>
               <option value="option6">FILIAL DE MARANHAO</option>
               <option value="option7">FILIAL SÃO PAULO</option>
-                 </th>
-           </table>
-            </select> 
-          </section>
-            
-            <section>
-         <table border="4" height="65" width="35"> <br>
-      <thead>
-        <tr>
-          <th>Motorista</th>
-          <th>Placa</th>
-          <th>Cliente</th>
-          <th>CT-e</th>
-          <th>Nota Fiscal</th>
-          <th>CNPJ</th>
-        </tr>
-      </thead>
-      <tbody> 
-        <tr>
-          <td>
-           <input type="text"> 
-          </td>
-          <td>
-           <input type="text"> 
-          </td>
-          <td>
-           <input type="text"> 
-          </td>
-          <td>
-           <input type="text"> 
-          </td>
-          <td>
-           <input type="text"> 
-          </td>
-          <td>
-           <input type="text"> 
-          </td>
-        </tr>
-      </tbody>
-      </section>
-          </form> <br>
-          <section> 
-          <table border="4" height="350" width="1065">
-          </table>
-          </section>
-          <footer>
-            <p>&copy;Sistema de Avaria</p>
-            <p>&reg;Direitos Reservados 2026</p>
-          </footer>
-        </main>
-  </body>
+          </th>
+        </table>
+        </select>
+    </section> <br>
+
+    <div>
+      <table border="3" class="tabela">
+        <thead>
+          <tr>
+            <th>Motorista</th>
+            <th>Placa</th>
+            <th>Cliente</th>
+            <th>CT-e</th>
+            <th>Nota Fiscal</th>
+            <th>CNPJ</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text">
+            </td>
+            <td>
+              <input type="text">
+            </td>
+            <td>
+              <input type="text">
+            </td>
+            <td>
+              <input type="text">
+            </td>
+            <td>
+              <input type="text">
+            </td>
+            <td>
+              <input type="text">
+            </td>
+            <td>
+              <input type="date">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </form> <br>
+    <!--tabela em branco pra teste-->
+    <div>
+      <table border="3" class="tabela vazia"></table>
+    </div>
+    <br>
+    <!--botao onde filtra os avarias-->
+    <div class="botao filtrar">
+      <button type="submit">FILTRAR</button>
+    </div>
+    <!--botao onde limpa o campo-->
+    <div class="botao limpar">
+      <button type="reset">LIMPAR</button>
+    </div>
+    <!--botao onde cadastra registro novos-->
+    <div class="cadastrar">
+      <button type="button">CADASTRAR</button>
+    </div>
+    <!--anexar arquivos externos e internos-->
+    <div class="anexar">
+      <button type="button">ANEXAR</button>
+    </div>
+    <br>
+
+    <footer>
+      <p>&copy;Sistema de Avaria</p>
+      <p>&reg;Direitos Autorais Reservados 2026</p>
+    </footer>
+
+  </main>
+</body>
+
+</html>
