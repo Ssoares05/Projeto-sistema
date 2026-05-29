@@ -2,77 +2,81 @@
   font-family:Arial, Helvetica, sans-serif
 }
 
-
-body {
-  padding:10px;
+.corpo {
+  padding: 10px;
   margin:10px;
-  background-color:linen;
+  background-color:rgb(179, 201, 204);
   
 }
 
 
-h1 {
-  padding:10px;
-  margin:10px;
+.titulo {
+    font-size: 20px;            
+  display: inline-block;
+  padding:5px;
+  margin:5px;
 font-weight:bold;
- color:brown;
- width:auto;
- height: 25px;
+ color:black;
+ height: 35px;
  position:relative;
- left: 450px;
- text-align:left;
+ left: 580px;
+ 
+ 
 }
 
 .tabela {
-  padding:10px;
-  margin:10px;
-  color:brown;
+  font-size:18px;
+  border:darkslategrey solid 3px;
+  padding:5px;
+  margin:5px;
+  color:black;
   background-color:floralwhite;
-  border-collapse:separate;
   border:darkslategrey solid 4px;
   border-radius: 5px;
-  width:100px;
-  height:65px;
   position:relative;
+  left:75px;
   }
 
-div button {
-    color:brown;
-    background-color:floralwhite;
-    font-weight:bold;
-    width: 150px;
-    height: 20px;
+.container-botoes {
+    padding: 5px;
+    margin:5px;
+    height:25px;
+    display:flex;
+    gap: 10px;
+    left:520px;
     position:relative;
-    left: 495px;
-    top: 2%;
-    
-}
+    font-weight:bold;
+    cursor:pointer;
+    }
  
-  footer {
-    padding:10px;
-  margin:10px;
+.container-footer {
+  font-size:14px;
+    padding:5px;
+  margin:5px;
     font-weight:bold;
   color:black;
+  display:flex;
+  gap: 10px;
   }
 
-  select {
-    color:brown;
+.select {
+    color:black;
     background-color:floralwhite;
-    width: auto;
-    height: 20px;
+    width:auto;;
+    height: 15px;
     font-weight:bold;
+    display:inline-block;
  }
 
  .filiais {
-  color:brown;
+  border:darkslategrey solid 5px;
+  color:black;
   background-color:floralwhite;
   border:black solid 3px;
-  border-radius: 5px;
   font-weight:bold;
-  width:fit-content; 
-  height: 15px;
+  height: 5px;
   position:relative;
-  left: 435px;
+  left: 530px;
  }
 
  .vazia {
@@ -80,7 +84,62 @@ div button {
   height: 350px;
   background-color:floralwhite;
   position:relative;
-  left: 85px;
+  left: 180px;
  }
 
+ .menu-principal {
+  list-style: none;
+  background-color:black;
+  display:flex;
+  justify-content:center;
+ }
 
+ .menu-principalli {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+ }
+
+ .menu-principal > li > a:hover {
+  background-color:gold;
+ }
+
+ .dropdown {
+  padding:5px;
+  margin:5px;
+  color:black;
+  background-color:floralwhite;
+  position: relative;
+}
+
+.dropdown-conteudo {
+  padding:5px;
+  margin:5px;
+  display: none; 
+  position: absolute; /* Faz a caixinha flutuar por cima do resto do site */
+  background-color: floralwhite;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sombra para dar efeito de relevo */
+  list-style: none;
+  z-index: 1;
+}
+
+/* Estilo dos links que estão DENTRO do submenu */
+.dropdown-conteudo a {
+  color:black;
+  padding: 12px 16px; /* Espaçamento interno de cada opção */
+  text-decoration: none;
+  display: block; /* Faz cada opção ocupar a linha inteira, um embaixo do outro */
+  text-align: left;
+}
+
+/* Efeito de hover dentro do submenu */
+.dropdown-conteudo a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-conteudo {
+  display: block;
+}

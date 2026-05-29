@@ -9,17 +9,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="corpo">
   <main>
+    <!--barra menu de tarefas-->
+    <nav class="navbar">
+      <table border="3">
+        <tr>
+    <ul class="Menu-principal">
+        <li><a href="index.html">inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Cadastro</a>
+          <ul class="dropdown-conteudo">
+        <li><a href="#">Cadastro Motorista</a></li>
+        <li><a href="#">Cadastro Veículo</a></li>
+        <li><a href="#">Cliente</a></li>
+      </ul>
+      </li>
+      <li class="dropdown">
+      <a href="#" class="dropbtn">Documentos ▼</a>
+      <ul class="dropdown-conteudo">
+        <li><a href="#">Emissão de CT-e</a></li>
+        <li><a href="#">Cancelar CT-e</a></li>
+        <li><a href="#">Carta de Correção</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Financeiro ▼</a>
+      <ul class="dropdown-conteudo">
+        <li><a href="#">Lançamento de Despesa</a></li>
+        <li><a href="#">Histórico de Despesa</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Sistema de Avaria</a></li>
+  </ul>
+        </tr>
+      </table>
+</nav>
+          <div class="dropdown-content">
+            <a href="#">Cadastro Motorista</a>
+            <a href="#">Cadastro veiculo</a>
+          </div>
+        </li>
+        <li><a href="#">Cliente</a></li>
+        <li><a href="#">Emisao de CT-e</a></li>
+        <li><a href="#">Cancelar CT-e</a></li>
+        <li><a href="#">Carta de Correçao</a></li>
+        <li><a href="#">Lançamento de Despesa</a></li>
+        <li><a href="#">Historico de Despesa</a></li>
+        <li><a href="#">Sistema de Avaria</a></li>
+      </ul>
+      </main>
+    </nav>
     <section id="Sistema de avaria">
-      <h1>Sistema de Avaria</h1> <br>
+      <h1 class="titulo">Sistema de Avaria</h1> <br>
     </section>
     <section>
       <form><!--FORMULARIO COM AS FILIAIS-->
-        <table border="3" class="filiais">
+        <table class="filiais">
           <th>
-            <label for="AFILIAL">AFILIAL</label>
-            <select name="AFILIAL" id="AFILIAL">
+            <label for="FILIAL">FILIAL</label>
+            <select name="FILIAL" id="FILIAL">
               <option value="option1">MATRIZ</option>
               <option value="option2">FILIAL DE RIO GRANDE DO SUL</option>
               <option value="option3">FILIAL DE PARANA</option>
@@ -29,11 +78,11 @@
               <option value="option7">FILIAL SÃO PAULO</option>
           </th>
         </table>
-        </select>
+        </select> 
     </section> <br>
 
     <div>
-      <table border="3" class="tabela">
+      <table class="tabela">
         <thead>
           <tr>
             <th>Motorista</th>
@@ -75,28 +124,22 @@
     </form> <br>
     <!--tabela em branco pra teste-->
     <div>
-      <table border="3" class="tabela vazia"></table>
+      <table class="tabela vazia"></table>
     </div>
     <br>
     <!--botao onde filtra os avarias-->
-    <div class="botao filtrar">
-      <button type="submit">FILTRAR</button>
-    </div>
-    <!--botao onde limpa o campo-->
-    <div class="botao limpar">
-      <button type="reset">LIMPAR</button>
-    </div>
+    <div class="container-botoes">
+    <button type="submit">FILTRAR</button>
+     <!--botao onde limpa o campo-->
+    <button type="reset">LIMPAR</button>
     <!--botao onde cadastra registro novos-->
-    <div class="cadastrar">
-      <button type="button">CADASTRAR</button>
-    </div>
+     <button type="button">CADASTRO</button>
     <!--anexar arquivos externos e internos-->
-    <div class="anexar">
-      <button type="button">ANEXAR</button>
+    <button type="button">ANEXAR</button>
     </div>
     <br>
 
-    <footer>
+    <footer class="container-footer">
       <p>&copy;Sistema de Avaria</p>
       <p>&reg;Direitos Autorais Reservados 2026</p>
     </footer>
