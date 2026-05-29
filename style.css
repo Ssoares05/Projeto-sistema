@@ -113,6 +113,11 @@ font-weight:bold;
   background-color:floralwhite;
   position: relative;
 }
+ 
+  footer {
+    font-weight:bold;
+  color:black;
+  }
 
 .dropdown-conteudo {
   padding:5px;
