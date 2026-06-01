@@ -19,6 +19,7 @@ body{
 font-weight:bold;
  color:black;
  text-align:center;
+ border:darkslategrey solid 3px;
  }
 header{
   padding:5px;
@@ -62,25 +63,23 @@ header{
   gap: 10px;
   }
 
-.select {
-    color:black;
-    background-color:floralwhite;
-    width:auto;;
-    height: 15px;
-    font-weight:bold;
-    display:inline-block;
- }
-
- .filiais {
+.filiais {
   border:darkslategrey solid 5px;
   color:black;
   background-color:floralwhite;
   border:black solid 3px;
   font-weight:bold;
-  height: 5px;
   position:relative;
-  left: 530px;
- }
+  left:550px;
+  height:80px;
+  width:100px;
+  }
+select{
+  height:25px;
+  width:auto;
+  text-align: center;
+   font-weight:bold;
+}
 
  main{
   align-items: center;
