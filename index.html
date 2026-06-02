@@ -1,101 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="sistema de avaria">
-  <title>Sistema de Avaria</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Avaria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
 <body class="corpo">
-  <main>
-    <!--sistema de avaria-->
-    
-    <section id="Sistema de avaria">
-      <header>
-      <h1 class="titulo">Sistema de Avaria</h1> <br>
-      </header>
-    </section>
-    <section>
-      <!--seleçao de filiais-->
-  <table class="filiais">
-    <tr> <th>
-        <label for="FILIAL">FILIAL</label>
-        <select name="FILIAL" id="FILIAL">
-          <option value="option1">MATRIZ</option>
-          <option value="option2">RIO GRANDE DO SUL</option>
-          <option value="option3">PARANA</option>
-          <option value="option4">MATO GROSSO</option>
-          <option value="option5">MINAS GERAIS</option>
-          <option value="option6">MARANHAO</option>
-          <option value="option7">SÃO PAULO</option>
-        </select> </th>
-    </tr> </table>
-</section> <br>
 
-    <div>
-      <table class="tabela">
-        <thead>
-          <tr>
-            <th>Motorista</th>
-            <th>Placa</th>
-            <th>Cliente</th>
-            <th>CT-e</th>
-            <th>Nota Fiscal</th>
-            <th>CNPJ</th>
-            <th>Data</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="resultado">
-            <td>
-              <input type="text">
-            </td>
-            <td>
-              <input type="text">
-            </td>
-            <td>
-              <input type="text">
-            </td>
-            <td>
-              <input type="text">
-            </td>
-            <td>
-              <input type="text">
-            </td>
-            <td>
-              <input type="text">
-            </td>
-            <td>
-              <input type="date">
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    </form> <br>
+  <main class="main-container">
     
-    <br>
-    <!--botao onde filtra os avarias-->
+    <header class="titulo">
+        <h2>Sistema de Avaria</h2>
+    </header>
+
+    <section class="filiais">
+        <label for="filial-select">AFILIAL</label>
+        <select id="filial-select">
+            <option value="maranhao">MARANHÃO</option>
+            <option value="sao-paulo">SÃO PAULO</option>
+            <option value="rio-de-janeiro">RIO DE JANEIRO</option>
+            <option value="brasilia">BRASÍLIA</option>
+            <option value="salvador">SALVADOR</option>
+            <option value="fortaleza">FORTALEZA</option>
+            <option value="curitiba">CURITIBA</option>
+            <option value="parana">PARANÁ</option>
+            <option value="mato-grosso">MATO GROSSO</option>
+            <option value="minas-gerais">MINAS GERAIS</option>
+            <option value="rio-grande">RIO GRANDE DO SUL</option>
+            </select>
+    </section>
+
+    <section class="tabela">
+        <div class="grupo-input">
+            <label>Motorista</label>
+            <input type="text">
+            </div>
+        <div class="grupo-input">
+            <label>Placa</label>
+            <input type="text">
+        </div>
+        <div class="grupo-input">
+            <label>Cliente</label>
+            <input type="text">
+        </div>
+        <div class="grupo-input">
+            <label>CT-e</label>
+            <input type="text">
+        </div>
+        <div class="grupo-input">
+            <label>Nota Fiscal</label>
+            <input type="text">
+        </div>
+        <div class="grupo-input">
+            <label>CNPJ</label>
+            <input type="text">
+        </div>
+        <div class="grupo-input">
+            <label>Data</label>
+            <input type="date">
+        </div>
+       
+    </section>
+
     <div class="container-botoes">
-    <button type="submit">FILTRAR</button>
-     <!--botao onde limpa o campo-->
-    <button type="reset">LIMPAR</button>
-    <!--botao onde cadastra registro novos-->
-     <button type="button">CADASTRO</button>
-    <!--anexar arquivos externos e internos-->
-    <button type="button">ANEXAR</button>
+        <button type="button">FILTRAR</button>
+        <button type="button">LIMPAR</button>
+        <button type="button">CADASTRO</button>
+        <button type="button">ANEXAR</button>
     </div>
-    <br>
 
     <footer class="container-footer">
-      <p>&copy;Sistema de Avaria</p>
-      <p>&reg;Direitos Autorais Reservados 2026</p>
+        <p>&copy; Sistema de Avaria</p>
+        <p>&reg; Direitos Autorais Reservados 2026</p>
     </footer>
 
   </main>
 </body>
-
 </html>
