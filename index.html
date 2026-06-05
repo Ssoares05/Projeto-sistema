@@ -35,23 +35,23 @@
     <section class="tabela">
         <div class="grupo-input">
             <label>Motorista</label>
-            <input type="text">
+            <input type="text" placeholder="Nome do Motorista" maxlength="50" inputmode="text">
             </div>
         <div class="grupo-input">
             <label>Placa</label>
-            <input type="text">
+            <input type="text" placeholder="ABC-1234" maxlength="7" inputmode="text">
         </div>
         <div class="grupo-input">
             <label>Cliente</label>
-            <input type="text">
+            <input type="text" placeholder="Nome do Cliente" maxlength="50" inputmode="text">
         </div>
         <div class="grupo-input">
             <label>CT-e</label>
-            <input type="text">
+            <input type="text" placeholder="Numero do CT-e" maxlength="44" inputmode="numeric">
         </div>
         <div class="grupo-input">
             <label>Nota Fiscal</label>
-            <input type="text">
+            <input type="text" placeholder="Numero da Nota Fiscal" maxlength="44" inputmode="numeric">
         </div>
         <div class="grupo-input">
             <label>CNPJ</label>
@@ -65,10 +65,10 @@
     </section>
 
     <div class="container-botoes">
-        <button type="button">FILTRAR</button>
-        <button type="button">LIMPAR</button>
-        <button type="button">CADASTRO</button>
-        <button type="button">ANEXAR</button>
+        <button onclick="filtrarVerificaçao()" id="botao-filtrar">FILTRAR</button>
+        <button onclick="limparVerificaçao()" id="botao-limpar">LIMPAR</button>
+        <button onclick="cadastrarVerificaçao()" id="botao-cadastrar">CADASTRO</button>
+        <button onclick="anexarVerificaçao()" id="botao-anexar">ANEXAR</button>
     </div>
 
     <footer class="container-footer">
