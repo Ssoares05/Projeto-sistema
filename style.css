@@ -132,3 +132,11 @@ select {
     }
 }
 
+/* Toda a estilização da mensagem centralizada aqui */
+#mensagem-sistema {
+    grid-column: 1 / -1;       /* Ocupa a largura inteira da tabela Grid */
+    font-weight: bold;         /* Deixa o texto em negrito */
+    margin-top: 15px;          /* Cria o espaçamento do topo */
+    text-align: center;        /* Centraliza o texto */
+    color: rgb(215, 35, 35);   /* Deixa a cor vermelha que você pediu */
+}

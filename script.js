@@ -1,19 +1,25 @@
-function filtrarVerificaçao()
-{
-    alert("Filtrar em Desenvolvimento");
+// Função do botão FILTRAR
+function filtrarVerificacao() {
+    const campoMensagem = document.getElementById('mensagem-sistema');
+    campoMensagem.innerHTML = "Buscando avarias registradas para a filial selecionada...";
 }
 
-function cadastrarVerificaçao()
-{
-    alert("Cadastrar em Desenvolvimento");
+// Função do botão LIMPAR
+function limparVerificacao() {
+    const campoMensagem = document.getElementById('mensagem-sistema');
+    campoMensagem.innerHTML = "Todos os campos do formulário foram limpos!";
+    
+    
 }
 
-function limparVerificaçao()
-{
-    alert("Limpar em Desenvolvimento");
+// Função do botão CADASTRO
+function cadastrarVerificacao() {
+    const campoMensagem = document.getElementById('mensagem-sistema');
+    campoMensagem.innerHTML = "Sucesso! Avaria cadastrada no sistema.";
 }
 
-function anexarVerificaçao()
-{
-    alert("Anexar em Desenvolvimento");
+// Função do botão ANEXAR
+function anexarVerificacao() {
+    const campoMensagem = document.getElementById('mensagem-sistema');
+    campoMensagem.innerHTML = "Janela de arquivos aberta. Selecione as fotos da avaria.";
 }

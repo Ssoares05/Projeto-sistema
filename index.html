@@ -29,46 +29,49 @@
             <option value="mato-grosso">MATO GROSSO</option>
             <option value="minas-gerais">MINAS GERAIS</option>
             <option value="rio-grande">RIO GRANDE DO SUL</option>
-            </select>
+        </select>
     </section>
 
     <section class="tabela">
         <div class="grupo-input">
-            <label>Motorista</label>
+            <label for="motorista">Motorista</label>
             <input type="text" placeholder="Nome do Motorista" maxlength="50" inputmode="text">
-            </div>
+        </div>
         <div class="grupo-input">
-            <label>Placa</label>
+            <label for="placa">Placa</label>
             <input type="text" placeholder="ABC-1234" maxlength="7" inputmode="text">
         </div>
         <div class="grupo-input">
-            <label>Cliente</label>
+            <label for="cliente">Cliente</label>
             <input type="text" placeholder="Nome do Cliente" maxlength="50" inputmode="text">
         </div>
         <div class="grupo-input">
-            <label>CT-e</label>
+            <label for="CT-e">CT-e</label>
             <input type="text" placeholder="Numero do CT-e" maxlength="44" inputmode="numeric">
         </div>
         <div class="grupo-input">
-            <label>Nota Fiscal</label>
+            <label for="nota-fiscal">Nota Fiscal</label>
             <input type="text" placeholder="Numero da Nota Fiscal" maxlength="44" inputmode="numeric">
         </div>
         <div class="grupo-input">
-            <label>CNPJ</label>
+            <label for="cnpj">CNPJ</label>
             <input type="text" placeholder="00.000.000/0000-00" maxlength="14" inputmode="numeric">
         </div>
         <div class="grupo-input">
-            <label>Data</label>
+            <label for="data">Data</label>
             <input type="date">
         </div>
-       
+        
+        <!-- A MUDANÇA 1: Onde a mensagem vai aparecer (dentro da tabela) -->
+        <p id="mensagem-sistema"></p>
     </section>
 
     <div class="container-botoes">
-        <button onclick="filtrarVerificaçao()" id="botao-filtrar">FILTRAR</button>
-        <button onclick="limparVerificaçao()" id="botao-limpar">LIMPAR</button>
-        <button onclick="cadastrarVerificaçao()" id="botao-cadastrar">CADASTRO</button>
-        <button onclick="anexarVerificaçao()" id="botao-anexar">ANEXAR</button>
+        <!-- A MUDANÇA 2: Nomes corrigidos sem 'ç' e 'ã' para conversarem com o script.js -->
+        <button onclick="filtrarVerificacao()" id="botao-filtrar">FILTRAR</button>
+        <button onclick="limparVerificacao()" id="botao-limpar">LIMPAR</button>
+        <button onclick="cadastrarVerificacao()" id="botao-cadastrar">CADASTRO</button>
+        <button onclick="anexarVerificacao()" id="botao-anexar">ANEXAR</button>
     </div>
 
     <footer class="container-footer">
