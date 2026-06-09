@@ -1,13 +1,13 @@
 // Função do botão FILTRAR
 function filtrarVerificacao() {
     const campoMensagem = document.getElementById('mensagem-sistema');
-    campoMensagem.innerHTML = "Buscando avarias registradas para a filial selecionada...";
+    campoMensagem.innerHTML = "Buscando avarias registradas...";
 }
 
 // Função do botão LIMPAR
 function limparVerificacao() {
     const campoMensagem = document.getElementById('mensagem-sistema');
-    campoMensagem.innerHTML = "Todos os campos do formulário foram limpos!";
+    campoMensagem.innerHTML = "Todos os campos foram limpos!";
     
     
 }
@@ -15,11 +15,13 @@ function limparVerificacao() {
 // Função do botão CADASTRO
 function cadastrarVerificacao() {
     const campoMensagem = document.getElementById('mensagem-sistema');
-    campoMensagem.innerHTML = "Sucesso! Avaria cadastrada no sistema.";
+    campoMensagem.innerHTML = "Sucesso! Avaria cadastrada.";
 }
 
 // Função do botão ANEXAR
 function anexarVerificacao() {
     const campoMensagem = document.getElementById('mensagem-sistema');
-    campoMensagem.innerHTML = "Janela de arquivos aberta. Selecione as fotos da avaria.";
+    campoMensagem.innerHTML = "Janela de arquivos aberta. Selecione a foto,video ou NF da avaria.";
 }
+
+
