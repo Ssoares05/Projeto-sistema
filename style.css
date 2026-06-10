@@ -141,3 +141,35 @@ select {
     color: rgb(215, 35, 35);   /* Deixa a cor vermelha */
 
 }
+#resultado-pesquisa {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    padding: 15px;
+    min-height: 120px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    text-align: left;
+    background-color: white;
+}
+
+#btn-anexo {
+    background-color: #2f5d62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-anexo:hover {
+    background-color: #3d747a;
+}
+
+#nome-arquivo {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+}

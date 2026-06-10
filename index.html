@@ -35,35 +35,51 @@
     <section class="tabela">
         <div class="grupo-input">
             <label for="motorista">Motorista</label>
-            <input type="text" placeholder="Nome do Motorista" maxlength="50" inputmode="text">
+            <input type="text" id="motorista" placeholder="Nome do Motorista" maxlength="50" inputmode="text">
         </div>
         <div class="grupo-input">
             <label for="placa">Placa</label>
-            <input type="text" placeholder="ABC-1234" maxlength="7" inputmode="text">
+            <input type="text" id="placa" placeholder="ABC-1234" maxlength="7" inputmode="text">
         </div>
         <div class="grupo-input">
             <label for="cliente">Cliente</label>
-            <input type="text" placeholder="Nome do Cliente" maxlength="50" inputmode="text">
+            <input type="text" id="cliente" placeholder="Nome do Cliente" maxlength="50" inputmode="text">
         </div>
         <div class="grupo-input">
             <label for="CT-e">CT-e</label>
-            <input type="text" placeholder="Numero do CT-e" maxlength="44" inputmode="numeric">
+            <input type="text" id="cte" placeholder="Numero do CT-e" maxlength="44" inputmode="numeric">
         </div>
         <div class="grupo-input">
             <label for="nota-fiscal">Nota Fiscal</label>
-            <input type="text" placeholder="Numero da Nota Fiscal" maxlength="44" inputmode="numeric">
+            <input type="text" id="nota" placeholder="Numero da Nota Fiscal" maxlength="44" inputmode="numeric">
         </div>
         <div class="grupo-input">
             <label for="cnpj">CNPJ</label>
-            <input type="text" placeholder="00.000.000/0000-00" maxlength="14" inputmode="numeric">
+            <input type="text" id="cnpj" placeholder="00.000.000/0000-00" maxlength="14" inputmode="numeric">
         </div>
         <div class="grupo-input">
-            <label for="data">Data</label>
-            <input type="date">
-        </div>
-        
+    <label>Data</label>
+    <input type="date" id="data">
+</div>
+       <div class="grupo-input">
+    <label>Anexo</label>
+
+    <button type="button" id="btn-anexo">
+        Selecionar Arquivo
+    </button>
+
+    <input
+        type="file"
+        id="arquivo"
+        hidden
+        accept=".pdf,.jpg,.jpeg,.png,.mp4">
+
+    <small id="nome-arquivo">
+        Nenhum arquivo selecionado
+    </small>
+</div>
         <!-- A MUDANÇA 1: Onde a mensagem vai aparecer (dentro da tabela) -->
-        <p id="mensagem-sistema"></p>
+        <div id="resultado-pesquisa"></div>
     </section>
 
     <div class="container-botoes">
@@ -71,7 +87,6 @@
         <button onclick="filtrarVerificacao()" id="botao-filtrar">FILTRAR</button>
         <button onclick="limparVerificacao()" id="botao-limpar">LIMPAR</button>
         <button onclick="cadastrarVerificacao()" id="botao-cadastrar">CADASTRO</button>
-        <button onclick="anexarVerificacao()" id="botao-anexar">ANEXAR</button>
     </div>
 
     <footer class="container-footer">
